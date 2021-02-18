@@ -1,0 +1,19 @@
+{
+  "name": "keycloak-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "keycloak": "docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin quay.io/keycloak/keycloak:12.0.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-keycloak": "0.0.16",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.9.2",
+    "keycloak-connect": "^12.0.3"
+  }
+}
